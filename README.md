@@ -3,8 +3,8 @@
 
 # Grupo 2
 - Gustavo Takahashi
-- Luiza Arantes
-- Marcos Costa
+- Luiza Arantes Braz
+- Marcos Augusto Rossi Paulino Costa
 - Sara Novais Felix 
 ---
 Materials for the Hackathon of a fake Telco Company named Terra Signal. Includes the dataset, and a starter notebook.
