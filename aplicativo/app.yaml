@@ -1,0 +1,24 @@
+# Databricks Apps runtime config - React SPA + Genie via App Resources
+
+env:
+  - name: NODE_ENV
+    value: production
+  - name: NPM_CONFIG_PRODUCTION
+    value: "false"
+
+# Build React and serve static files
+command:
+  - bash
+  - -lc
+  - |
+    set -euo pipefail
+
+    echo "=== npm build ==="
+    npm run build
+
+    echo "=== serve static files ==="
+    npm install -g http-server
+    http-server dist -p 8000 -c-1
+
+logging:
+  level: INFO
